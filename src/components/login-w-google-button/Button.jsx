@@ -4,7 +4,7 @@ export default function Button(props) {
     
     return (
         <main>
-            <button>{props.children}</button>
+            <button onClick={props.onClick}>{props.children}</button>
         </main>
     )
 }

@@ -18,7 +18,7 @@ export default function LoginButtonApp() {
     return (
         <main>
             <h2>I am LoginButtonApp</h2>
-            <Button>
+            <Button onClick={() => console.log("Logging in...")}>
                 <FcGoogle />
                 Log in with Google
             </Button>
