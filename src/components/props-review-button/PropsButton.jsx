@@ -1,10 +1,10 @@
 import "./assets/styles.css"
 import Button1 from "./Button1"
+import { FaMoneyBill } from "react-icons/fa";
 
 /**
- * Challenge: Make the Button accept and display children.
- * 
- * Change the text to say "Buy now!" so it's less boring 🥱
+ * Challenge: Add the "FaMoneyBill" icon to the left
+ * of the "Buy now!" text in the button
  */
 
 
@@ -15,7 +15,10 @@ export default function PropsButton() {
 
     return (
         <main>
-            <Button1>Buy Now!</Button1>
+            <Button1>
+                <FaMoneyBill />
+                Buy Now!
+            </Button1>
         </main>
     )
 }
