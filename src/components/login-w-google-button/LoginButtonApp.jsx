@@ -18,7 +18,7 @@ export default function LoginButtonApp() {
     return (
         <main>
             <h2>I am LoginButtonApp</h2>
-            <Button onClick={() => console.log("Logging in...")}>
+            <Button onClick={() => console.log("Logging in...")} style={{color: "darkgreen"}}>
                 <FcGoogle />
                 Log in with Google
             </Button>
