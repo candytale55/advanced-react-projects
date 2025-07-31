@@ -1,7 +1,10 @@
 import './App.css'
-import Marquee from './components/marquee/Marquee'
+import PropsButton from './components/props-review-button/PropsButton'
 
-/*import PropsButton from './components/props-review-button/PropsButton'*/
+/*
+import PropsButton from './components/props-review-button/PropsButton'
+import Marquee from './components/marquee/Marquee'
+*/
 
 
 
@@ -11,7 +14,8 @@ function App() {
     <>
       
       <h1>I am App</h1>
-      <Marquee>🧛‍♀️ Welcome to Horrorville 🧛‍♀️</Marquee>
+      <PropsButton />
+      {/*<Marquee>🧛‍♀️ Welcome to Horrorville 🧛‍♀️</Marquee>*/}
       {/*<PropsButton />*/}
     </>
   )
