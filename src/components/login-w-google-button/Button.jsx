@@ -1,11 +1,11 @@
 import "./assets/styles.css"
 
-export default function Button(props) {
-    
+export default function Button({children, ...rest}) {
+    console.log(rest)
     return (
         <main>
-            <button {...props}>
-                {props.children}
+            <button {...rest}>
+                {children}
             </button>
         </main>
     )
