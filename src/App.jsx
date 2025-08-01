@@ -1,5 +1,6 @@
 import './App.css'
-import PropsButton from './components/props-review-button/PropsButton'
+import LoginButtonApp from './components/login-w-google-button/LoginButtonApp'
+
 
 /*
 import PropsButton from './components/props-review-button/PropsButton'
@@ -14,7 +15,7 @@ function App() {
     <>
       
       <h1>I am App</h1>
-      <PropsButton />
+      <LoginButtonApp />
       {/*<Marquee>🧛‍♀️ Welcome to Horrorville 🧛‍♀️</Marquee>*/}
       {/*<PropsButton />*/}
     </>
