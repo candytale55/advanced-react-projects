@@ -2,7 +2,7 @@ import React from "react"
 import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
 
-export default function Menu({ buttonText = "Menu", items }) {
+export default function Menu({ children }) {
     /**
      * Note: leave the div className="menu" here and render
      * the children inside that div. Notice this component will become
@@ -22,12 +22,7 @@ export default function Menu({ buttonText = "Menu", items }) {
 
     return (
         <div className="menu">
-            <MenuButton
-                buttonText={buttonText}
-                onClick={toggle}
-            />
-
-            {open && <MenuDropdown items={items} />}
+            {children}
         </div>
     )
 }
