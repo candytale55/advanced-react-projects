@@ -25,10 +25,15 @@ import { IoPersonSharp } from "react-icons/io5"
  * color classes to add to the wrapper div.
  */
 
-export default function Avatar() {
+export default function Avatar({children, src, alt, ...rest}) {
     return (
         <>
             <h2>I am Avatar</h2>
+            <div className="avatar" >
+                <img src={src} alt={alt} />
+            </div>
+            <div className="avatar avatar-letters">{children}</div>
+            <div className="avatar avatar-icon"><IoPersonSharp /></div>
         </>
     )
 }
