@@ -1,6 +1,6 @@
 import "./assets/styles.css"
 
-export default function Button({children, size, ...rest}) {
+export default function Button({children, className, size, ...rest}) {
 
     /**
      * Challenge: See if you can fix the problem with the
@@ -12,7 +12,7 @@ export default function Button({children, size, ...rest}) {
     
     //console.log(rest);
     
-    let className =
+    let sizeClass =
         size === "sm"
             ? "button-small"
             : size === "lg"
@@ -21,7 +21,7 @@ export default function Button({children, size, ...rest}) {
 
     return (
         <main>
-            <button {...rest} className = {className}>
+            <button {...rest} className = {className + " " + sizeClass}>
                 {children}
             </button>
         </main>
