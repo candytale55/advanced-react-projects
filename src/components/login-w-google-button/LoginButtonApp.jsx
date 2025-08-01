@@ -2,7 +2,7 @@ import "./assets/styles.css"
 import Button from "./Button"
 import { FcGoogle } from "react-icons/fc";
 
-// size="lg" must be manually changed to sm - lg - default value is medium
+// props are manually changed to sm - lg - (default value is medium), variant  `success`, `warning`, or `danger`
 export default function LoginButtonApp() {
 
     return (
@@ -10,7 +10,7 @@ export default function LoginButtonApp() {
             <h2>I am LoginButtonApp</h2>
             <Button
                 onClick={() => console.log("Logging in...")}
-                className="green"
+                variant = "warning"
                 size="lg"
             >
                 
