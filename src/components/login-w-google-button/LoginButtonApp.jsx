@@ -10,7 +10,8 @@ export default function LoginButtonApp() {
             <h2>I am LoginButtonApp</h2>
             <Button
                 onClick={() => console.log("Logging in...")}
-                size="sm"
+                size="lg"
+                color="green"
             >
                 
                 <FcGoogle />

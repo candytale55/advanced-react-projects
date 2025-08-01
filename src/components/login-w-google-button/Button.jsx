@@ -3,16 +3,12 @@ import "./assets/styles.css"
 export default function Button({children, size, ...rest}) {
 
     /**
-     * Challenge: accept the `size` prop and set the `className` of the
-     * <button> to:
-     * 
-     * "button-small" if `size` is "sm"
-     * "button-large" if `size` is "lg"
-     * 
-     * Note: don't try to manually add a `className` to the Button
-     * instance in index.js yet. (DO add `className` to this file
-     * as part of the challenge, though.)
+     * Challenge: See if you can fix the problem with the
+     * conflicting `className` props. Doesn't need to be
+     * elegant, just see if you can get the button to be
+     * both large AND with green text
      */
+
     
     //console.log(rest);
     
