@@ -2,7 +2,7 @@ import "./assets/styles.css"
 import Button from "./Button"
 import { FcGoogle } from "react-icons/fc";
 
-
+// size="lg" must be manually changed to sm - lg - default value is medium
 export default function LoginButtonApp() {
 
     return (
