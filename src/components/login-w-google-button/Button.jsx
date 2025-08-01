@@ -25,10 +25,8 @@ export default function Button({children, className, size, variant, ...rest}) {
 
 
     return (
-        <main>
             <button {...rest} className={allClasses} >
                 {children}
             </button>
-        </main>
     )
 }

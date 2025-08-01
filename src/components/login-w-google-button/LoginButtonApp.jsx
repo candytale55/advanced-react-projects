@@ -8,15 +8,10 @@ export default function LoginButtonApp() {
     return (
         <main>
             <h2>I am LoginButtonApp</h2>
-            <Button
-                onClick={() => console.log("Logging in...")}
-                variant = "warning"
-                size="lg"
-            >
-                
-                <FcGoogle />
-                Log in with Google
-            </Button>
+            <Button><FcGoogle />Log in with Google</Button>
+            <Button variant="success"><FcGoogle />Log in with Google</Button>
+            <Button variant="warning"><FcGoogle />Log in with Google</Button>
+            <Button variant="danger"><FcGoogle />Log in with Google</Button>
         </main>
     )
 }
