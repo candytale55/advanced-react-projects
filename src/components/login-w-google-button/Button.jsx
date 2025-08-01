@@ -21,7 +21,7 @@ export default function Button({children, className, size, ...rest}) {
 
     return (
         <main>
-            <button {...rest} className = {className + " " + sizeClass}>
+            <button {...rest} className = {`${className} ${sizeClass}`}>
                 {children}
             </button>
         </main>

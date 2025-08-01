@@ -11,7 +11,7 @@ export default function LoginButtonApp() {
             <Button
                 onClick={() => console.log("Logging in...")}
                 className="green"
-                size="sm"
+                size="lg"
             >
                 
                 <FcGoogle />
