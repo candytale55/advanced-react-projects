@@ -13,6 +13,7 @@ import { IoPersonSharp } from "react-icons/io5"
  * With image: `avatar`
  * With initials: `avatar avatar-letters`
  * Anonymous: `avatar avatar-icon`
+ * https://react-icons.github.io/react-icons/search/#q=IoPersonSharp
  * 
  * E.g. <Avatar>BZ</Avatar> should render
  * <div className="avatar avatar-letters">...</div>
@@ -26,14 +27,21 @@ import { IoPersonSharp } from "react-icons/io5"
  */
 
 export default function Avatar({children, src, alt, ...rest}) {
-    return (
-        <>
-            <h2>I am Avatar</h2>
+
+    if (src) {
+        return (
             <div className="avatar" >
                 <img src={src} alt={alt} />
             </div>
-            <div className="avatar avatar-letters">{children}</div>
-            <div className="avatar avatar-icon"><IoPersonSharp /></div>
-        </>
-    )
+        )        
+    }
+
+    if (children) {
+        return <div className="avatar avatar-letters">{children}</div>
+    }
+
+    else {
+        return <div className="avatar avatar-icon"><IoPersonSharp /></div>
+    }
+
 }
