@@ -27,10 +27,11 @@ export default function MenuApp() {
     return (
         <>
             <h2>I am MenuApp</h2>
-            <Menu
-                buttonText="Sports"
-                items={["Tennis", "Pickleball", "Racquetball", "Squash"]}
-            />
+            <Menu>
+                <MenuButton buttonText="Sports" />
+                <MenuDropdown items={["Tennis", "Pickleball", "Racquetball", "Squash"]} />
+            </Menu>
+            
         </>
     )
 }
