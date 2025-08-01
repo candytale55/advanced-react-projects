@@ -28,6 +28,12 @@ import { IoPersonSharp } from "react-icons/io5"
 
 export default function Avatar({children, src, alt, ...rest}) {
 
+    const randomColors = ["red", "blue", "green", "pink", "navy"];
+    function getRandomColor() {
+        return randomColors[Math.floor(Math.random()*randomColors.length)]
+    }
+
+
     if (src) {
         return (
             <div className="avatar" >
@@ -41,7 +47,7 @@ export default function Avatar({children, src, alt, ...rest}) {
     }
 
     else {
-        return <div className="avatar avatar-icon"><IoPersonSharp /></div>
+        return <div className={`avatar avatar-icon ${getRandomColor()}`}><IoPersonSharp /></div>
     }
 
 }
