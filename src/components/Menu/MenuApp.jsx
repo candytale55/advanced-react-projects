@@ -22,7 +22,7 @@ export default function MenuApp() {
         <>
             <h2>I am MenuApp</h2>
             <Menu>
-                <MenuButton buttonText="Sports" />
+                <MenuButton>Sports</MenuButton>
                 <MenuDropdown items={["Tennis", "Pickleball", "Racquetball", "Squash"]} />
             </Menu>
             
