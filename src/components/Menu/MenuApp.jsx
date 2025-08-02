@@ -24,7 +24,7 @@ export default function MenuApp() {
                 <MenuButton>Sports</MenuButton>
                 <MenuDropdown>
                     {sports.map(sport => 
-                        <MenuItem>{ sport }</MenuItem>
+                        <MenuItem key={sport}>{ sport }</MenuItem>
                     )}
                 </MenuDropdown>
             </Menu>

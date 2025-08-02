@@ -1,7 +1,6 @@
 
-
-export default function MenuItem() {
+export default function MenuItem({ children }) {
     return (
-        <h2>I am Menu Item</h2>
+        <div className="menu-item">{ children }</div>
     )
 }
