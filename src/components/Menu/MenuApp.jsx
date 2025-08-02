@@ -2,6 +2,7 @@ import "./assets/styles.css"
 import Menu from "./Menu"
 import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
+import MenuItem from "./MenuItem"
 
 /**
  * 1. MenuDropdown should render children instead of items
@@ -14,13 +15,18 @@ import MenuDropdown from "./MenuDropdown"
  */
 
 export default function MenuApp() {
+    let sports = ["Tennis", "Pickleball", "Racquetball", "Squash"]
     
     return (
         <>
             <h2>I am MenuApp</h2>
             <Menu>
                 <MenuButton>Sports</MenuButton>
-                <MenuDropdown items={["Tennis", "Pickleball", "Racquetball", "Squash"]} />
+                <MenuDropdown>
+                    {sports.map(sport => 
+                        <MenuItem>{ sport }</MenuItem>
+                    )}
+                </MenuDropdown>
             </Menu>
             
         </>
