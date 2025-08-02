@@ -4,16 +4,13 @@ import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
 
 /**
- * Challenge:
- * 1. Convert the MenuButton to accept children and 
- *    render them. (In this case, the children will
- *    just be the button text)
- * 2. Change the MenuButton below to pass "Sports"
- *    in as a child of the component instead of by
- *    using the `buttonText` prop.
- * 
- * NOTE: It's fine that the menu is still broken, I
- * promise we're getting there! 😃
+ * 1. MenuDropdown should render children instead of items
+ * 2. MenuItem (new component you need to create) should also
+ *    render children. Grab the <div className="menu-item">
+ *    from MenuDropdown before deleting it if you want to be
+ *    lazy :)
+ * 3. Map over the `sports` array inside MenuDropdown in this
+ *    file and render a MenuItem for each sport in the array
  */
 
 export default function MenuApp() {
