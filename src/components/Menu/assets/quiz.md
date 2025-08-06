@@ -35,3 +35,10 @@ pass whatever props it needs to pass directly.
 https://kentcdodds.com/blog/aha-programming 
 https://react.dev/reference/react/Children
 
+# Discovery Challenge:
+     * In the MenuButton, MenuDropdown, and MenuItem components, 
+     * accept `toggle` and `open` props and just console log 
+     * both of them in all 3 components.
+     */
+
+    

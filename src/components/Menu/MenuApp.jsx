@@ -4,7 +4,6 @@ import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
 import MenuItem from "./MenuItem"
 
-
 export default function MenuApp() {
     let sports = ["Tennis", "Pickleball", "Racquetball", "Squash"]
     
