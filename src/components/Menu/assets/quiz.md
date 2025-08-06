@@ -10,7 +10,7 @@ sense to try and accomplish with a single component alone.
 2. What are some examples of HTML elements that work together to add functionality
    or styling to each other?
 
-<ul> & <li>, <select> & <option>, <table> & all the other table elements
+`<ul>` & `<li>`, `<select>` & `<option>`, `<table>` & all the other table elements
 
 
 3. How can compound components help you avoid having to drill props multiple levels
@@ -20,3 +20,18 @@ Compound component "flatten" the hierarchy that I would otherwise need to pass
 props through. Since I need to provide the children to render, the parent-most
 component has direct access to those "grandchild" components, to which it can
 pass whatever props it needs to pass directly.
+
+# Summary so Far
+[scrimba 1](https://scrimba.com/advanced-react-c02h/~0k) | [scrimba 2](https://scrimba.com/advanced-react-c02h/~0m)
+
+1. Moved the array of sports out of the Menu component.
+2. Create a MenuItem component that takes children.
+3. Map through the array of sports and add each one as a MenuItem into 
+   the MenuDropdown inside MenuApp.
+4. Fix MenuDropdown to take children 
+
+# Resources
+
+https://kentcdodds.com/blog/aha-programming 
+https://react.dev/reference/react/Children
+
