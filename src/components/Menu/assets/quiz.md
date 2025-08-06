@@ -41,4 +41,6 @@ https://react.dev/reference/react/Children
      * both of them in all 3 components.
      */
 
-    
+    MenuButton and MenuDropdown log something, but MenuItem doesn't because 
+    it isn't a direct child of Menu, so it doesn't have access to toggle and open.
+    The log returns `undefined`
