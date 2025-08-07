@@ -1,10 +1,8 @@
+import React from "react";
 import "./assets/styles.css"
 import Header from "./Header"
 import Button from "./Button"
 
-/**
- * Challenge: set up the context!
- */
 
 const ThemeContext = React.createContext();
 
