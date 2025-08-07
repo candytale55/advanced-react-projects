@@ -2,12 +2,23 @@ import "./assets/styles.css"
 import Header from "./Header"
 import Button from "./Button"
 
+/**
+ * Challenge: set up the context!
+ */
+
+const ThemeContext = React.createContext();
+
 export default function LightDarkApp() {
     
     return (
-        <div className="container dark-theme">
-            <Header />
-            <Button />
-        </div>
+        <ThemeContext.Provider value="light">
+            <div className="container dark-theme">
+                <Header />
+                <Button />
+            </div>
+        </ThemeContext.Provider>
+        
     )
 }
+
+export {ThemeContext}
