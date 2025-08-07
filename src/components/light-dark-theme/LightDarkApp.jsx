@@ -9,7 +9,7 @@ const ThemeContext = React.createContext();
 export default function LightDarkApp() {
     
     return (
-        <ThemeContext.Provider value="dark">
+        <ThemeContext.Provider value="light">
             <div className="container dark-theme">
                 <Header />
                 <Button />
