@@ -43,4 +43,8 @@ https://react.dev/reference/react/Children
 
     MenuButton and MenuDropdown log something, but MenuItem doesn't because 
     it isn't a direct child of Menu, so it doesn't have access to toggle and open.
-    The log returns `undefined`
+    The log returns `undefined`. 
+
+    To solve it you have to map and clone children in MenuDropdown 
+    (MenuDropdown children are MenuItems)
+    If you forgot this, check MenuApp()
