@@ -1,3 +1,4 @@
+import React from "react"
 import "./assets/styles.css"
 import Menu from "./Menu"
 import MenuButton from "./MenuButton"

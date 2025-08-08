@@ -48,3 +48,10 @@ https://react.dev/reference/react/Children
     To solve it you have to map and clone children in MenuDropdown 
     (MenuDropdown children are MenuItems)
     If you forgot this, check MenuApp()
+
+
+# Reference
+
+https://scrimba.com/advanced-react-c02h/~010 (Assistive technologies)
+https://scrimba.com/links/learn-react-useid
+https://scrimba.com/advanced-react-c02h/~011 (Dot Syntax)
