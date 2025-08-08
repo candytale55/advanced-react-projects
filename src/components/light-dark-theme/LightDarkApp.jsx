@@ -4,11 +4,10 @@ import Header from "./Header"
 import Button from "./Button"
 
 /**
- * Challenge part 2:
- * Create a `toggleTheme` function to that uses `setTheme`
- * to change the value from "light" to "dark" and vice versa.
+ * Challenge part 3:
+ * Figure out how to pass BOTH the `theme` value and 
+ * the `toggleTheme` function down through the context value
  */
-
 
 const ThemeContext = React.createContext();
 
@@ -21,7 +20,7 @@ export default function LightDarkApp() {
     }
         
     return (
-        <ThemeContext.Provider value={theme}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             <div className="container dark-theme">
                 <Header />
                 <Button />
