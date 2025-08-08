@@ -12,9 +12,15 @@ import { ThemeContext } from "./LightDarkApp"
 
 export default function Button() {
     const { theme, toggleTheme } = React.useContext(ThemeContext)
+    console.log(theme);
 
     return (
-        <button onClick={toggleTheme} className={`${theme}-theme`}>
+        <button onClick={() => {
+            console.log("Clicked!");
+            toggleTheme();
+            
+        }}
+            className={`${theme}-theme`}>
             Switch Theme
         </button>
     )

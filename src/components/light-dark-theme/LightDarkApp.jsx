@@ -10,6 +10,7 @@ import Button from "./Button"
  * correct values again.
  */
 
+
 const ThemeContext = React.createContext();
 
 export default function LightDarkApp() {
@@ -21,14 +22,15 @@ export default function LightDarkApp() {
     }
         
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             <div className={`container ${theme}-theme`}>
                 <Header />
                 <Button />
             </div>
         </ThemeContext.Provider>
+            
         
     )
 }
 
-export {ThemeContext}
+export { ThemeContext };
