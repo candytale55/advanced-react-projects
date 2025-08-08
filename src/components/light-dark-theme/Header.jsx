@@ -11,11 +11,12 @@ import { ThemeContext } from "./LightDarkApp"
  */
 
 export default function Header() {
-    const { theme } = React.useContext(ThemeContext)
+    const {theme} = React.useContext(ThemeContext)
 
     return (
         <header className={`${theme}-theme`}>
-            <h1>{ theme === "light" ? "Light" : "Dark"} Theme</h1>
+            <h1>{theme === "light" ? "Light" : "Dark"} Theme</h1>
+            {console.log("Current theme:", theme)}
         </header>
     )
 }
